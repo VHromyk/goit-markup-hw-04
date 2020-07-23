@@ -118,25 +118,36 @@ a {
 .head-address {
   display: flex;
   margin-left: auto;
-}
-.head-link {
-  font-style: normal;
-  font-size: 14px;
-  font-weight: 500;
   color: var(--primary-text-color);
-
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
-.head-link:not(:last-child) {
+.head-address-button:not(:last-child) {
   margin-right: 30px;
 }
 
-.head-link:hover,
-.head-link:focus {
+.head-address-button:hover,
+.head-address-button: {
   color: var(--accent-text-color);
+  fill: var(--accent-text-color);
+}
+.head-address-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.head-address-button {
+  display: block;
+  border: none;
+  background-color: var(--text-button);
+  border-style: none;
+  padding: unset;
+  cursor: pointer;
+  outline: none;
+}
+.head-address-button:hover {
+  color: var(--accent-text-color);
+  fill: var(--accent-text-color);
 }
 
 /*Оформление секции Hero*/
@@ -157,7 +168,6 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -213,13 +223,11 @@ a {
 /*Оформление секции Наше преимущество*/
 .advantage {
   padding-top: 94px;
-
-  /* outline: 1px solid crimson; */
 }
-.list {
+.advantage-list {
   display: flex;
 }
-.container .icon {
+.container .card {
   margin-right: 30px;
 }
 .hide-title {
@@ -239,7 +247,7 @@ a {
   margin-right: 30px;
 }
 
-.icon {
+.icon-card {
   width: 270px;
   height: 120px;
   border-radius: 4px;
@@ -248,11 +256,15 @@ a {
   justify-items: center;
   background-color: #f5f4fa;
 }
-.list h3 {
+.advantage-list h3 {
   padding-top: 30px;
 }
-.list p {
+.advantage-list p {
   padding-top: 10px;
+}
+.icon-card .icon {
+  width: 70px;
+  height: 70px;
 }
 
 /*Оформление секции Чем мы занимаемся*/
