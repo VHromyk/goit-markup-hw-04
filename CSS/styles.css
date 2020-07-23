@@ -169,6 +169,7 @@ a {
   background-size: cover;
   background-position: center;
   height: 600px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -315,7 +316,6 @@ a {
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
 }
-
 .team-section {
   background-color: #f5f4fa;
   text-align: center;
@@ -344,34 +344,60 @@ a {
   font-size: 16px;
   font-weight: 400;
 }
+.team-work {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  padding-top: 4px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
 .our-team-card:not(:last-child) {
   margin-right: 30px;
 }
-
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
 .our-team h3 {
   margin-top: 30px;
 }
 .our-team p {
   margin-top: 10px;
 }
+
 .social-list {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-top: 16px;
   padding-bottom: 24px;
 }
-.social-list > link {
-  display: block;
+.social-list-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.social-list-item-link-svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
 }
 
-.social-list .link:hover,
-.social-list .link:focus {
-  color: var(--accent-text-color);
+.social-list-item-link:hover {
+  background-color: var(--accent-text-color);
+}
+.social-list-item-link:hover .social-list-item-link-svg {
+  fill: var(--text-button);
 }
 
 .our-team .link:last-child {
   margin-right: 0px;
 }
+
 .social-list .link {
   margin-right: 10px;
   padding-bottom: 94px;
@@ -384,7 +410,7 @@ a {
   text-align: center;
 }
 
-.box .link {
+.box .box-link {
   display: block;
   width: 170px;
   height: 90px;
@@ -393,13 +419,46 @@ a {
   padding-top: 20px;
 }
 
-.box .link:hover,
-.box .link:focus {
+.box .box-link:hover,
+.box .box-link:focus {
   border-color: var(--accent-text-color);
 }
 
 .box:not(:last-child) {
   margin-right: 30px;
+}
+
+.box-link-svg {
+  fill: #afb1b8;
+}
+
+.first-logo {
+  width: 45px;
+  height: 49px;
+}
+.second-logo {
+  width: 40px;
+  height: 52px;
+}
+.third-logo {
+  width: 45px;
+  height: 49px;
+}
+.fourth-logo {
+  width: 41px;
+  height: 43px;
+}
+.fifth-logo {
+  width: 59px;
+  height: 47px;
+}
+.sixth-logo {
+  width: 89px;
+  height: 46px;
+}
+
+.box-link:hover .box-link-svg {
+  fill: var(--accent-text-color);
 }
 
 /*Стилизация Fotter*/
@@ -517,16 +576,6 @@ a {
   padding-left: 24px;
   line-height: 2;
   letter-spacing: 0.06em;
-}
-
-.team-work {
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-  padding-top: 4px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  padding-left: 24px;
 }
 
 .card {
