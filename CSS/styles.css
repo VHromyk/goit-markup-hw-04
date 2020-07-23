@@ -124,12 +124,6 @@ a {
   margin-right: 30px;
 }
 
-.head-address-button:hover,
-.head-address-button {
-  color: var(--accent-text-color);
-  fill: var(--accent-text-color);
-}
-
 .head-address-icon {
   width: 16px;
   height: 12px;
@@ -149,6 +143,10 @@ a {
 }
 .head-address-button:hover {
   color: var(--accent-text-color);
+  fill: var(--accent-text-color);
+}
+
+.head-address-button:hover .head-address-icon {
   fill: var(--accent-text-color);
 }
 
