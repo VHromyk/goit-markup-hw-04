@@ -118,7 +118,6 @@ a {
 .head-address {
   display: flex;
   margin-left: auto;
-  color: var(--primary-text-color);
 }
 
 .head-address-button:not(:last-child) {
@@ -126,20 +125,23 @@ a {
 }
 
 .head-address-button:hover,
-.head-address-button: {
+.head-address-button {
   color: var(--accent-text-color);
   fill: var(--accent-text-color);
 }
+
 .head-address-icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: var(--primary-text-color);
 }
 
 .head-address-button {
   display: block;
   border: none;
   background-color: var(--text-button);
+  color: var(--primary-text-color);
   border-style: none;
   padding: unset;
   cursor: pointer;
@@ -189,7 +191,7 @@ a {
   padding: 10px 32px;
   border: none;
   border-radius: 4px;
-  /* min-width: 200px; */
+  min-width: 200px;
   height: 50px;
   font-size: 16px;
   font-weight: 700;
@@ -343,15 +345,13 @@ a {
 .team-work {
   font-size: 16px;
   font-weight: 400;
-}
-.team-work {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  padding-top: 4px;
   padding-right: 24px;
   padding-left: 24px;
 }
+
 .our-team-card:not(:last-child) {
   margin-right: 30px;
 }
@@ -445,8 +445,8 @@ a {
   height: 49px;
 }
 .fourth-logo {
-  width: 41px;
-  height: 43px;
+  width: 80px;
+  height: 42px;
 }
 .fifth-logo {
   width: 59px;
@@ -519,6 +519,21 @@ a {
   padding-top: 72px;
   color: var(--text-button);
 }
+.footer-svg {
+  fill: var(--text-button);
+}
+.footer-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon-send-svg {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  vertical-align: middle;
+  fill: var(--text-button);
+}
 
 /*Стилизация portfolio.html*/
 .portfolio-list h3 {
@@ -555,12 +570,10 @@ a {
 }
 .flex-elements {
   width: 370px;
-}
-
-.flex-elements {
   margin-right: 30px;
   margin-bottom: 30px;
 }
+
 .flex-elements:nth-child(3n) {
   margin-right: 0px;
 }
@@ -589,15 +602,11 @@ a {
 .card-image {
   display: block;
 }
+.card-text {
+  padding-bottom: 20px;
+}
 .card-content {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
-}
-.button.primary::after {
-  display: inline-block;
-  content: ;
-  height: 20px;
-  width: 20px;
-  background-color: red;
 }

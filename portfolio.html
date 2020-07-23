@@ -31,8 +31,18 @@
           </ul>
         </nav>
         <address class="head-address">
-          <a href="" class="head-link">info@devstudio.com</a>
-          <a href="" class="head-link">tel:+380961111111</a>
+          <button class="head-address-button">
+            <svg class="head-address-icon email">
+              <use href="./svg-icon/sprite.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com
+          </button>
+          <button class="head-address-button">
+            <svg class="head-address-icon phone">
+              <use href="./svg-icon/sprite.svg#icon-smartphone"></use>
+            </svg>
+            tel:+380961111111
+          </button>
         </address>
       </div>
     </header>
@@ -81,7 +91,7 @@
               />
               <div class="card-content">
                 <h3 class="title-post">Технокряк</h3>
-                <p class="team-work">Веб-сайт</p>
+                <p class="team-work card-text">Веб-сайт</p>
               </div>
             </div>
           </li>
@@ -96,7 +106,7 @@
               />
               <div class="card-content">
                 <h3 class="title-post">Постер New Orlean vs Golden Star</h3>
-                <p class="team-work">Дизайн</p>
+                <p class="team-work card-text">Дизайн</p>
               </div>
             </div>
           </li>
@@ -111,7 +121,7 @@
               />
               <div class="card-content">
                 <h3 class="title-post">Ресторан Seafood</h3>
-                <p class="team-work">Приложение</p>
+                <p class="team-work card-text">Приложение</p>
               </div>
             </div>
           </li>
@@ -126,7 +136,7 @@
               />
               <div class="card-content">
                 <h3 class="title-post">Проект Prime</h3>
-                <p class="team-work">Маркетинг</p>
+                <p class="team-work card-text">Маркетинг</p>
               </div>
             </div>
           </li>
@@ -141,7 +151,7 @@
               />
               <div class="card-content">
                 <h3 class="title-post">Проект Boxes</h3>
-                <p class="team-work">Приложение</p>
+                <p class="team-work card-text">Приложение</p>
               </div>
             </div>
           </li>
@@ -156,7 +166,7 @@
               />
               <div class="card-content">
                 <h3 class="title-post">Inspiration has no Borders</h3>
-                <p class="team-work">Веб-сайт</p>
+                <p class="team-work card-text">Веб-сайт</p>
               </div>
             </div>
           </li>
@@ -171,7 +181,7 @@
               />
               <div class="card-content">
                 <h3 class="title-post">Издание Limited Edition</h3>
-                <p class="team-work">Дизайн</p>
+                <p class="team-work card-text">Дизайн</p>
               </div>
             </div>
           </li>
@@ -186,7 +196,7 @@
               />
               <div class="card-content">
                 <h3 class="title-post">Проект LAB</h3>
-                <p class="team-work">Маркетинг</p>
+                <p class="team-work card-text">Маркетинг</p>
               </div>
             </div>
           </li>
@@ -201,7 +211,7 @@
               />
               <div class="card-content">
                 <h3 class="title-post">Growing Business</h3>
-                <p class="team-work">Приложение</p>
+                <p class="team-work card-text">Приложение</p>
               </div>
             </div>
           </li>
@@ -228,20 +238,63 @@
         <div class="footer-social-link">
           <span class="footer-text"><b>ПРИСОЕДЕНЯЙТЕСЬ</b></span>
           <ul class="social-list">
-            <li>
-              <a href="" aria-label="Instagram" class="link">Instagram</a>
+            <li class="social-list-item">
+              <a
+                href=""
+                aria-label="Instagram"
+                class="social-list-item-link footer-link"
+              >
+                <svg class="social-list-item-link-svg footer-svg">
+                  <use href="./svg-icon/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li><a href="" aria-label="Twitter" class="link">Twitter</a></li>
-            <li><a href="" aria-label="Facebook" class="link">Facebook</a></li>
-            <li><a href="" aria-label="LinkedIn" class="link">LinkedIn</a></li>
+            <li class="social-list-item">
+              <a
+                href=""
+                aria-label="Twitter"
+                class="social-list-item-link footer-link"
+              >
+                <svg class="social-list-item-link-svg footer-svg">
+                  <use href="./svg-icon/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a
+                href=""
+                aria-label="Facebook"
+                class="social-list-item-link footer-link"
+              >
+                <svg class="social-list-item-link-svg footer-svg">
+                  <use href="./svg-icon/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a
+                href=""
+                aria-label="LinkedIn"
+                class="social-list-item-link footer-link"
+              >
+                <svg class="social-list-item-link-svg footer-svg">
+                  <use href="./svg-icon/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
         </div>
         <div>
           <div>
             <span class="footer-text"><b>ПОДПИШИТЕСЬ НА РАССЫЛКУ</b></span>
           </div>
-          <div>
-            <button class="button primary">Подписаться</button>
+          <div class="buttton-icon-send">
+            <button class="button primary">
+              Подписаться
+              <svg class="icon-send-svg">
+                <use href="./svg-icon/sprite.svg#icon-icon_send"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
