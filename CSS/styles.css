@@ -196,6 +196,9 @@ a {
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border: none;
+  border-style: none;
+  outline: none;
 
   color: var(--text-button);
   background-color: var(--accent-text-color);
@@ -607,4 +610,10 @@ a {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+.choose {
+  min-width: 73px;
+  height: 38px;
+  padding: 6px 22px;
+  outline: none;
 }
